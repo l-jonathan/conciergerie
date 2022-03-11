@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, minimum-scale=1, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- FONT ROBOTO POUR CORPS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- FONT CHARM POUR TITRE -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Charm&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LINK POUR FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Conciergerie - Le Mans</title>
+
+    <script type="text/javascript">
+      function displayProprietaires() {
+        var element = document.getElementById("display-proprietaire");
+
+        if (element.classList.contains("display-proprietaire-off") == true) {
+          element.classList.remove("display-proprietaire-off");
+          element.classList.add("display-proprietaire-on");
+        } else {
+          element.classList.add("display-proprietaire-off");
+          element.classList.remove("display-proprietaire-on");
+        }
+      }
+      function displayVoyageurs() {
+        var element = document.getElementById("display-voyageurs");
+
+        if (element.classList.contains("display-voyageurs-off") == true) {
+          element.classList.remove("display-voyageurs-off");
+          element.classList.add("display-voyageurs-on");
+        } else {
+          element.classList.add("display-voyageurs-off");
+          element.classList.remove("display-voyageurs-on");
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <img src="./images/logo_provisoire.png" height="70px" width="70px" />
+      <div class="container-menu">
+        <div id="menu-proprietaires">Propriétaires</div>
+        <div id="menu-voyageurs">Voyageurs</div>
+        <div id="menu-locations">Nos locations</div>
+        <div id="menu-contact">Nous contacter</div>
+      </div>
+    </header>
+    <div class="container-principal">
+      <div class="container-principal-image">
+        <div class="container-principal-image-text">
+          <div class="title">Les clefs de l'Ouest</div>
+          <div class="title-description">Conciergerie et gestion locative</div>
+        </div>
+      </div>
+      <div class="presentation">
+        La conciergerie Mancelle, Les clefs de l’Ouest, spécialisée dans la
+        gestion locative de courte durée type Airbnb, Booking vous offre des
+        services complets de qualités. Que vous soyez propriétaire ou à la
+        recherche d’un logement pour vos vacances ou pour le travail, notre seul
+        objectif : Vous satisfaire !
+      </div>
+      <div class="container-proprio-voyageurs">
+        <div class="presentation-proprietaires">
+          <div class="proprietaires-image"></div>
+          <div class="proprietaires-text">
+            <div class="container-text-presentation">
+              <div class="presentation-title">Pour vous propriétaires</div>
+              <div class="presentation-link">
+                La location en toute confiance
+              </div>
+              <div class="presentation-description">
+                Vous souhaitez louer votre logement, optimiser vos revenus
+                locatifs mais vous n’êtes pas sur place ou n’avez pas le temps
+                de vous en occuper, Les clefs de l’Ouest se charge d’organiser
+                vos locations saisonnières. Nous prenons soin de votre bien et
+                de vos locataires pour une totale tranquillité.
+              </div>
+              <div
+                id="proprietaires-plus"
+                class="proprietaires-plus"
+                onclick="displayProprietaires()"
+              >
+                Envie d'en savoir plus ?
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="display-proprietaire" class="display-proprietaire-off">
+          <div class="presentation-proprietaires">
+            <div class="proprietaires-text">
+              <div class="container-text-presentation">
+                <div class="presentation-title">Annonce personnalisée</div>
+                <ul>
+                  <li>
+                    Visite et photographies professionnelles de votre logement
+                  </li>
+                  <li>
+                    Création et diffusion de votre annonce avec sur les plus
+                    grandes plateformes : Airbnb, Abritel, Bookink…
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="proprietaires-image-annonce"></div>
+          </div>
+          <div class="presentation-proprietaires">
+            <div class="proprietaires-image-assistance"></div>
+            <div class="proprietaires-text">
+              <div class="container-text-presentation">
+                <div class="presentation-title">Assistance 7/7</div>
+                <ul>
+                  <li>Elaboration d’un guide pratique pour vos invités</li>
+                  <li>Etat des lieux d’entrée et de sortie</li>
+                  <li>
+                    Assistance téléphonique 7/7 : communication avec les
+                    voyageurs, dépannage, travaux de maintenance…
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="presentation-proprietaires">
+            <div class="proprietaires-text">
+              <div class="container-text-presentation">
+                <div class="presentation-title">Tarifs attractifs</div>
+                <ul>
+                  <li>
+                    Optimisation des prix en fonction de l’offre et de la
+                    demande
+                  </li>
+                  <li>
+                    Gestion de votre annonce de manière réactive et sélection
+                    rigoureuse des profils voyageurs
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="proprietaires-image-prix"></div>
+          </div>
+          <div class="presentation-proprietaires">
+            <div class="proprietaires-image-menage"></div>
+            <div class="proprietaires-text">
+              <div class="container-text-presentation">
+                <div class="presentation-title">Menage et linge</div>
+                <ul>
+                  <li>Service haut de gamme de ménage et de blanchisserie</li>
+                  <li>Produits d’accueil fourni pour vos voyageurs</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="presentation-voyageurs">
+          <div class="voyageurs-text">
+            <div class="container-text-presentation">
+              <div class="presentation-title">Pour vous voyageurs</div>
+              <div class="presentation-link">Partez l’esprit tranquille</div>
+              <div class="presentation-description">
+                Envie de prendre du bon temps ou à la recherche d’un logement
+                pour un déplacement professionnel, nous sommes à votre écoute
+                pour vous présenter un choix de lieu où rêver votre séjour.
+                Attentifs à vos besoins, la conciergerie Les Clefs de l’Ouest
+                est là pour vous aider à préparer votre venue en Sarthe du début
+                jusqu’à la fin.
+              </div>
+              <div
+                id="voyageurs-plus"
+                class="voyageurs-plus"
+                onclick="displayVoyageurs()"
+              >
+                Envie d'en savoir plus ?
+              </div>
+            </div>
+          </div>
+          <div class="voyageurs-image"></div>
+        </div>
+
+        <div id="display-voyageurs" class="display-voyageurs-off">
+          <div class="presentation-voyageurs">
+            <div class="voyageurs-image-lieu"></div>
+            <div class="voyageurs-text">
+              <div class="container-text-presentation">
+                <div class="presentation-title">Le lieu idéal</div>
+                <ul>
+                  <li>
+                    Aide à la sélection de propriétés et lieux de vacances en
+                    Sarthe
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="presentation-voyageurs">
+            <div class="voyageurs-text">
+              <div class="container-text-presentation">
+                <div class="presentation-title">Accueil personnalisé</div>
+                <ul>
+                  <li>Remise des clefs et du guide du logement</li>
+                  <li>Cadeau de bienvenue</li>
+                  <li>Recommandations</li>
+                </ul>
+              </div>
+            </div>
+            <div class="voyageurs-image-accueil"></div>
+          </div>
+          <div class="presentation-voyageurs">
+            <div class="voyageurs-image-accompagnement"></div>
+            <div class="voyageurs-text">
+              <div class="container-text-presentation">
+                <div class="presentation-title">
+                  Accompagnement et conseils 7/7
+                </div>
+                <ul>
+                  <li>
+                    Une question ou un problème durant votre séjour, nous
+                    restons à votre écoute 7/7
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="presentation-voyageurs">
+            <div class="voyageurs-text">
+              <div class="container-text-presentation">
+                <div class="presentation-title">Des prestations à la carte</div>
+                <ul>
+                  <li>Livraison de vos courses</li>
+                  <li>Livraison de paniers repas régionaux</li>
+                  <li>Service de transport</li>
+                  <li>Location de matériel de puériculture</li>
+                  <li>Prêt de jeux de société, livres…</li>
+                </ul>
+              </div>
+            </div>
+            <div class="voyageurs-image-carte"></div>
+          </div>
+        </div>
+      </div>
+      <div class="bloc-couleur-nous">
+        <div class="container-nous">
+          <div class="nous-title">QUI SOMMES-NOUS ?</div>
+          <div class="nous-content">
+            <div class="nous-photo">
+              <img src="./images/flo_micka.jpg" />
+            </div>
+            <div class="nous-text">
+              <span
+                >Floriane originaire de Picardie vivant dans la région Mancelle
+                depuis 2011 et Michaël originaire de l’Ouest de la France. Nous
+                sommes un couple trentenaire sérieux, responsable et de
+                confiance qui vous proposons un service régulier de gestion de
+                vos locations ou de vos séjours courtes durées de type Airbnb,
+                Booking, Expédia, Abritel…</span
+              ><br /><br />
+              <span>
+                Forts de notre expérience de plus de 10 ans dans la gestion
+                locative en France et à l’étranger, nous avons créé notre
+                entreprise de conciergerie et de gestion des locations courte
+                durée. Ainsi est née Les Clefs de l’Ouest. </span
+              ><br /><br />
+              <span
+                >Nous savons à quel point il est important que tout soit parfait
+                tant pour les voyageurs qui souhaitent profiter pleinement du
+                moment tant pour les propriétaires qui souhaitent louer leur
+                bien sans contraintes. </span
+              ><br /><br />
+              <span
+                >Que vous soyez voyageurs ou propriétaires, nous mettrons tout
+                en oeuvre pour que chacune de vos expériences locatives soient
+                réussies</span
+              ><br /><br />
+              <span
+                >Nous intervenons sur Le Mans et dans l’ensemble du département
+                de la Sarthe.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

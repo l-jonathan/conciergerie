@@ -1,0 +1,328 @@
+/* BODY */
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  margin: 0 auto;
+  background-color: #f0e5d1;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  max-height: 70px;
+  top: 0;
+  left: 0;
+  background-color: #070707;
+  z-index: 100;
+}
+
+header div {
+  display: flex;
+  font-size: 20px;
+  font-weight: 800;
+  color: white;
+}
+
+#menu-proprietaires,
+#menu-locations,
+#menu-voyageurs,
+#menu-contact {
+  margin-right: 50px;
+}
+
+/* IMAGE ACCUEIL */
+.container-principal-image {
+  background-image: url("./images/maison1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 70px);
+  margin-top: 70px;
+  position: relative;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+}
+
+.container-principal-image-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+.title {
+  font-family: "Charm", "Roboto", sans-serif;
+  font-size: 160px;
+  font-weight: 200;
+}
+.title-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.container-principal-image-text span {
+  font-size: 20px;
+  font-weight: 900;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* TEXTE PRÉSENTATION */
+.presentation {
+  display: flex;
+  font-size: 28px;
+  font-weight: 900;
+  width: 70%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+/* BLOC PRÉSENTATION PROPRIÉTAIRES/VOYAGEURS */
+.container-proprio-voyageurs {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.presentation-proprietaires,
+.presentation-voyageurs {
+  height: 400px;
+  display: flex;
+  background-color: white;
+}
+
+.proprietaires-text,
+.voyageurs-text {
+  width: 50%;
+  display: flex;
+}
+
+.proprietaires-image {
+  background-image: url("./images/maison2.jpg");
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.proprietaires-text li,
+.voyageurs-text li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.proprietaires-image {
+  background-image: url("./images/maison2.jpg");
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.proprietaires-image-annonce {
+  background-image: url("./images/camera.jpg");
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.proprietaires-image-assistance {
+  background-image: url("./images/assistance.jpg");
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.proprietaires-image-prix {
+  background-image: url("./images/prix.jpg");
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.proprietaires-image-menage {
+  background-image: url("./images/menage.jpg");
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.voyageurs-image {
+  background-image: url("./images/maison3.jpg");
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.voyageurs-image-lieu {
+  background-image: url("./images/lieu.jpg");
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.voyageurs-image-accueil {
+  background-image: url("./images/accueil.jpg");
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.voyageurs-image-accompagnement {
+  background-image: url("./images/assistance.jpg");
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.voyageurs-image-carte {
+  background-image: url("./images/carte.jpg");
+  height: 100%;
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container-text-presentation {
+  margin: 0 20px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.presentation-title {
+  font-size: 28px;
+}
+.presentation-link {
+  font-size: 20px;
+}
+
+.proprietaires-plus,
+.voyageurs-plus {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.display-proprietaire-off,
+.display-voyageurs-off {
+  display: none;
+}
+
+.display-proprietaire-on,
+.display-voyageurs-on {
+  display: block !important;
+}
+
+/* BLOC QUI SOMMES NOUS */
+.bloc-couleur-nous {
+  background-color: rgb(204 183 156);
+  height: 600px;
+  display: flex;
+  margin: 50px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-nous {
+  width: 70%;
+  margin: 50px auto;
+}
+
+.nous-title {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.nous-content {
+  display: flex;
+}
+
+.nous-photo {
+  display: flex;
+  width: 40%;
+}
+
+.nous-photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  margin: auto;
+}
+
+.nous-text {
+  width: 40%;
+  margin: auto auto;
+}
+
+/* BLOC DESCRIPTION PROPRIÉTAIRES/VOYAGEURS */
+.description-proprietaires,
+.description-voyageurs {
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.description-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.proprietaires-accroche {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.description-proprietaires li,
+.description-voyageurs li {
+  list-style: none;
+}
+
+.container-list-proprietaires {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-proprietaires {
+  width: 50%;
+}
+
+ul {
+  padding: 0 !important;
+}
+
+.list-title {
+  font-size: 18px;
+  font-weight: 900;
+}
